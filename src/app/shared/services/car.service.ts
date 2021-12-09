@@ -12,6 +12,6 @@ export class CarService{
     constructor(private http: HttpClient){}
 
     public getSample(): Observable<any> {
-        return this.http.get<any>(this.apiServerUrl + "/car")
+        return this.http.get(this.apiServerUrl + "/car", {responseType: 'text'})
     }
 }
