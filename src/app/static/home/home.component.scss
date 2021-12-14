@@ -1,0 +1,313 @@
+/*-----------------------shared css-----------------------*/
+// shared font
+.font {
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+//small text for indentifying section
+.smallText {
+    font-size: 18px;
+}
+
+//medium text used for section description
+.mediumText {
+    font-size: 25px;
+
+}
+
+//large text to indicate product/feature name
+.largeText {
+    font-size: 45px; 
+    line-height: 90%;
+    padding-bottom: 1%;
+    color: #31809F;
+}
+
+//spacing for intro and feature text
+.brPadding2 {
+    display: block;
+}
+
+//shared text container
+.text4 {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+/*-----------------------shared css-----------------------*/
+
+
+/*-----------------------landing section-----------------------*/
+//landing background section
+.landingDiv  {
+    height: 100vh;
+    position: relative;
+    //background image 
+    background-image: url('/assets/static-website/nightbar.jpg');
+    //background tint
+    background-color: rgba(49, 128, 159, 0.5);
+    background-blend-mode: multiply;
+    //make background responsive
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+}
+
+//landing top text
+.text1 {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 40px;
+    text-shadow: 0 0 5px rgba(17, 17, 17, 0.5), 0 0 10px rgba(17, 17, 17, 0.5), 0 0 15px rgba(17, 17, 17, 0.5);
+    padding-top: 15%;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+}
+
+//landing bottom text
+.text2 {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 20px;
+    text-shadow: 0 0 5px rgba(17, 17, 17, 0.5), 0 0 10px rgba(17, 17, 17, 0.5), 0 0 15px rgba(17, 17, 17, 0.5);
+    padding-top: 3%;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+}
+/*-----------------------landing section-----------------------*/
+
+
+/*-----------------------banner section-----------------------*/
+//banner background section
+.bannerDiv {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    left: 0px;
+    top: 100%;
+
+    background: conic-gradient(from 134.12deg at 49.24% 34.49%, rgba(49, 128, 159, 0.2) -181.88deg, #31809F 0.86deg, rgba(49, 128, 159, 0.847644) 44.32deg, rgba(49, 128, 159, 0.2) 178.12deg, #31809F 360.86deg);
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+}
+
+//Ensemble text for banner
+.bannerText {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 70px;
+    text-shadow: 0 0 5px rgba(17, 17, 17, 0.25), 0 0 10px rgba(17, 17, 17, 0.25), 0 0 15px rgba(17, 17, 17, 0.25);
+    padding-top: 2.5%;
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+//Ensemble logo
+.logo {
+    display: block;
+    padding-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+/*-----------------------banner section-----------------------*/
+
+
+/*-----------------------hook section-----------------------*/
+//hook section
+.hookDiv {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    
+}
+
+//hook text container
+.hookText {
+    height: 100%;
+    padding-left: 20%;
+}
+
+//white background for hook section
+.backgroundWhite {
+    height: 100%;
+    
+    width: 100%;
+    background-color: white;
+    display: inline-flex;
+}
+
+//hook top text
+.text3 {
+    font-size: 45px;
+    width: 70vh;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+//hook middle question texts
+.questionText {
+    font-size: 20px;
+    width: 70vh;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+//padding to put in between hook middle question texts
+.brPadding1 {
+    display: block;
+    padding-top: 1%;
+}
+
+//hook section pixel art container
+.hookPixelArtDiv {
+    height: 50vh;
+    width: 100%;
+}
+
+//hook section pixel art
+.hookPixelArt {
+    width: 400px;
+    height:300px;
+    float: right;
+    position: absolute;           
+    right: 0px;
+    padding-right:20%;
+    top: 50%;                      
+    transform: translateY(-50%);      
+}
+/*-----------------------hook section-----------------------*/
+
+
+/*-----------------------introduction section-----------------------*/
+//grey background for intro and feature section
+.backgroundGrey {
+    height: 100vh;
+    width: 100%;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column; 
+    position: relative;
+}
+
+//intro pixel art container
+.introPixelArtDiv {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+//intro pixel art
+.introPixelArt {
+    width: 70%;
+    height:300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*-----------------------introduction section-----------------------*/
+
+
+/*-----------------------features section-----------------------*/
+//feature pixel art container
+.featurePixelArtDiv {
+    height: auto;
+    width: 100%;
+}
+
+//feature pixel art
+.featurePixelArt {
+    width: 70%;
+    height: 40vh;
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 1%;
+}
+
+//card layout for each feature
+.featureCard {
+    background-color: white;
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+/*-----------------------features section-----------------------*/
+
+
+/*-----------------------many more text section-----------------------*/
+.manymoreDiv {
+    background-color: #F2F2F2;
+    font-size: 60px;
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column; 
+    text-align: center;
+}
+/*-----------------------many more text section-----------------------*/
+
+
+/*-----------------------call to action section-----------------------*/
+.movieScreen {
+    background-color: white;
+    height: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column; 
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}   
+
+.text5 {
+    text-align: center;
+}
+
+.backgroundTheatre {
+    height: 100vh;
+    width: 100%;
+    background-image: url("/assets/static-website/image 9.png");
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column; 
+    position: relative;
+}

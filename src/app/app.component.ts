@@ -15,13 +15,13 @@ export class AppComponent {
     private carSerivce: CarService
   ) {}
 
-  public buttonPress() {
-    this.carSerivce.getSample().subscribe(
-      (response: String) => {
-        console.log(response);
-      }, (err) => {
-        console.log(err)
-      }
-    )
-  }
+  // public buttonPress() {
+  //   this.carSerivce.getSample().subscribe(
+  //     (response: String) => {
+  //       console.log(response);
+  //     }, (err) => {
+  //       console.log(err)
+  //     }
+  //   )
+  // }
 }
