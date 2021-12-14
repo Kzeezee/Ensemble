@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { CarService } from './shared/services/car.service';
+import { CarService } from './ensembleapp/shared/services/car.service';
 
 @Component({
   selector: 'app-root',
