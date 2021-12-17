@@ -34,7 +34,11 @@
 
 .navbar.inverse {
     background-color: #424342;
-    transition: 100ms;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 0.2vw 0.5vw rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    transition: 100ms; 
 }
 
 // change colour of padding and word when mouse hover

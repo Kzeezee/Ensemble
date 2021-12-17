@@ -7,10 +7,9 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {} 
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
