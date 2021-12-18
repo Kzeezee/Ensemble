@@ -33,8 +33,98 @@ $Ensemble-theme: mat.define-light-theme((
 // that you are using.
 @include mat.all-component-themes($Ensemble-theme);
 
+$responsive-typography: mat.define-typography-config(
+  $display-4: mat.define-typography-level(
+  $font-family: Poppins,
+  $font-weight: 600,
+  $font-size: 0px,
+  $line-height: 0px ,
+  $letter-spacing: normal,),
+
+  $display-3: mat.define-typography-level(
+  $font-family: Poppins,
+  $font-weight: 600,
+  $font-size: 0px,
+  $line-height: 0px ,
+  $letter-spacing: normal,),
+
+  $display-2: mat.define-typography-level(
+  $font-family: Poppins,
+  $font-weight: 600,
+  $font-size: 0px,
+  $line-height: 0px ,
+  $letter-spacing: normal,),
+  
+  $display-1: mat.define-typography-level(
+  $font-family: Poppins,
+  $font-weight: 600,
+  $font-size: 0px,
+  $line-height: 0px ,
+  $letter-spacing: normal,),
+  
+  $headline: mat.define-typography-level(
+  $font-family: Poppins,
+  $font-weight: 600,
+  $font-size: 0px,
+  $line-height: 0px ,
+  $letter-spacing: normal,),
+
+  $title: mat.define-typography-level(
+  $font-family: Poppins,
+  $font-weight: 600,
+  $font-size: 0px,
+  $line-height: 0px ,
+  $letter-spacing: normal,),
+
+  $subheading-2: mat.define-typography-level(
+  $font-family: Poppins,
+  $font-weight: 600,
+  $font-size: 0px,
+  $line-height: 0px ,
+  $letter-spacing: normal,),
+
+  $subheading-1: mat.define-typography-level(
+  $font-family: Poppins,
+  $font-weight: 600,
+  $font-size: 0px,
+  $line-height: 0px ,
+  $letter-spacing: normal,),
+
+  $body-1: mat.define-typography-level(
+  $font-family: Poppins,
+  $font-weight: 600,
+  $font-size: 0vw,
+  $line-height: 0vw ,
+  $letter-spacing: normal,),
+
+  $body-2: mat.define-typography-level(
+  $font-family: Poppins,
+  $font-weight: 600,
+  $font-size: 0vw,
+  $line-height: 0vw ,
+  $letter-spacing: normal,),
+
+  $caption: mat.define-typography-level(
+  $font-family: Poppins,
+  $font-weight: 600,
+  $font-size: 0px,
+  $line-height: 0px ,
+  $letter-spacing: normal,),
+
+  $button: mat.define-typography-level(
+  $font-family: Poppins,
+  $font-weight: 600,
+  $font-size: 0px,
+  $line-height: 0px ,
+  $letter-spacing: normal,),
+
+    
+);
+@include mat.core($responsive-typography);
+
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 html {
     height: 100%;
@@ -43,6 +133,7 @@ html {
 body {
     margin: 0%;
     min-height: 100%;
+    height: 100%;
 }
 
 * { 
@@ -50,11 +141,13 @@ body {
     padding: 0;
 }
 
-$primary: #31809F;
-$primary-dark: #184D68;
-$contrast-background: #424342;
-$highlight: #D55121;
-$background-white: #F2F2F2;
-$background-vanilla: #F2EEE5;
-$accent-black: #111111;
-$accent-white: #FFFFFF;
+:root {
+  --primary: #31809F;
+  --primary-dark: #184D68;
+  --contrast-background: #424342;
+  --highlight: #D55121;
+  --background-white: #F2F2F2;
+  --background-vanilla: #F2EEE5;
+  --accent-black: #111111;
+  --accent-white: #FFFFFF;
+}

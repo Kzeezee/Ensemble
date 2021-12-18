@@ -1,7 +1,5 @@
-@import '../../../../styles.scss';
-
 .nav-drawer-container {
-    background-color: $contrast-background;
+    background-color: var(--contrast-background);
     height: 100vh;
     width: 300px;
     overflow: hidden;
@@ -20,7 +18,7 @@
     text-align: center;
     font-weight: 500;
     font-size: 2em;
-    color: $accent-white;
+    color: var(--primary);
     padding: 0.2em 0em;
 }
 
@@ -33,7 +31,7 @@
 }
 
 hr .solid {
-    border-top: 3px solid $background-white;
+    border-top: 3px solid var(--background-white);
 }
 
 .nav-drawer-container {

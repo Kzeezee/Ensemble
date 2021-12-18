@@ -7,19 +7,24 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {} 
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
-      let element = document.querySelector('.navBar') as HTMLElement;
-      if (window.pageYOffset > element.clientHeight) {
-        element.classList.add('inverse');
+      let nbElement = document.querySelector('.navbar') as HTMLElement;
+      if (window.pageYOffset > nbElement.clientHeight) {
+        nbElement.classList.add('inverse');
       } else {
-        element.classList.remove('inverse');
+        nbElement.classList.remove('inverse');
+      }
+
+      let nlElement = document.querySelector('.navbar-nav') as HTMLElement;
+      if (window.pageYOffset > nlElement.clientHeight) {
+        nlElement.classList.add('inverse');
+      } else {
+        nlElement.classList.remove('inverse');
       }
     }
-
 }

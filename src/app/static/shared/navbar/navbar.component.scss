@@ -1,56 +1,57 @@
 // navigation bar
-.navBar {
+.navbar.transparent {
     position: fixed;
-    top: 0;
     background-color: transparent;
-    overflow: hidden;
     width: 100%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0.2vw 0.5vw rgba(0, 0, 0, 0.5);
     z-index: 3;
+    transition: 100ms; 
+}   
+
+.navbar-nav li a {
+    color: #e0e0e0;
+    font-weight: 600;
+    font-size: 30px;
+    text-shadow: 0 2.5px #424342;
+    padding: 0 auto;
+    height:100%;
 }
 
-.navBar.inverse {
-    background-color: #424342;
-    transition: 100ms;
+.navbar.inverse div .navbar-nav li a {
+    text-shadow: 0 2.5px #111111;
 }
 
-// Ensemble logo
-.logo {
+.nav-link {
+    font-size: 35px;
+    min-width: 50vh;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 10%;
-    display: inline-block;
+}
+
+.navbar {
+    padding: 0;
+}
+
+
+.navbar.inverse {
+    background-color: #424342;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 0.2vw 0.5vw rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    transition: 100ms; 
 }
 
 // change colour of padding and word when mouse hover
-.navbar a:hover {
-    background-color: rgba(255, 255, 255, 0.25);;
+.navbar-nav li a:hover {
     color: #111111;
     text-shadow: 0px 2px grey;
-    transition: 0.5s;
+    transition: 0.5s; 
 }
 
-// center nav bar links
-.navLinks {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    //center text
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-
-// decoration for link text
-.navLinks a {
-    text-decoration: none;
+.navbar.inverse div .navbar-nav.inverse li a:hover {
     color: #FFFFFF;
-    font-weight: 600;
-    font-size: 30px;
-    text-shadow: 0px 2px #424342;
-    padding: 10%;
-    ;
+    text-shadow: 0px 2px grey;
+    transition: 0.5s; 
 }
 
 // shared font
@@ -59,4 +60,3 @@
     font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
