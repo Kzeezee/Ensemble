@@ -3,6 +3,7 @@
 .nav-drawer-container {
     background-color: $contrast-background;
     height: 100vh;
+    width: 300px;
     overflow: hidden;
 }
 
@@ -37,4 +38,10 @@ hr .solid {
 
 .nav-drawer-container {
     
+}
+
+.list-group-item {
+    font-size: larger;
+    background-color: $contrast-background;
+    color: #FFFFFF;
 }
