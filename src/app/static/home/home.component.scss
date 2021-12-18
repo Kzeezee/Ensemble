@@ -1,10 +1,4 @@
 /*-----------------------shared css-----------------------*/
-// shared font
-.font {
-    font-family: 'Poppins';
-    font-style: normal;
-}
-
 //bottom padding
 .bottomPadding {
     padding-bottom: 3vw;
@@ -30,12 +24,11 @@
 //top text for landing section
 .landingDiv div h3 {
     color: #FFFFFF;
-    font-weight: 600;
-    font-size: 2vw;
+    font-size: 40px;
     text-shadow: 0 0 0.25vw rgba(17, 17, 17, 0.5), 0 0 0.5vw rgba(17, 17, 17, 0.5), 0 0 0.75vw rgba(17, 17, 17, 0.5);
-    text-align: center;
+
     margin: 0 0 0vw;
-    height: 3vw;
+    height: 60px;
 }
 
 //bottom text for landing section
@@ -46,8 +39,7 @@
     text-shadow: 0 0 0.25vw rgba(17, 17, 17, 0.5), 0 0 0.5vw rgba(17, 17, 17, 0.5), 0 0 0.75vw rgba(17, 17, 17, 0.5);
     text-align: center;
     margin: 0 0 0vw;
-    padding-top: 1vw;
-    height: 3vw;
+    height: 2vw;
 }
 
 //landing background section

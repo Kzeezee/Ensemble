@@ -40,6 +40,6 @@ hr .solid {
 
 .list-group-item {
     font-size: larger;
-    background-color: $contrast-background;
+    background-color: var(--contrast-background);
     color: #FFFFFF;
 }

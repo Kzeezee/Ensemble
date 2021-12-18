@@ -7,7 +7,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { CarService } from './ensembleapp/shared/services/car.service';
 import { NavbarComponent } from './static/shared/navbar/navbar.component';
 import { FooterComponent } from './static/shared/footer/footer.component';
-import { DashboardComponent } from './ensembleapp/dashboard/dashboard.component';
 import { NavDrawerComponent } from './ensembleapp/shared/nav-drawer/nav-drawer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatExpansionModule } from '@angular/material/expansion';
@@ -23,9 +22,9 @@ import { PrevDirective } from './ensembleapp/shared/header/prev.directive';
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    DashboardComponent,
     NavDrawerComponent,
     RoutingComponents,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

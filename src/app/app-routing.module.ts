@@ -5,6 +5,7 @@ import { PricingComponent } from './static/pricing/pricing.component';
 import { OurstoryComponent } from './static/ourstory/ourstory.component';
 import { LoginComponent } from './static/login/login.component';
 import { RegisterComponent } from './static/register/register.component';
+import { DashboardComponent } from './ensembleapp/dashboard/dashboard.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'content/home', pathMatch:'full'},
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path:'content/pricing', component: PricingComponent},
   {path:'content/ourstory', component: OurstoryComponent},
   {path:'content/login', component: LoginComponent},
-  {path:'content/register', component: RegisterComponent}
+  {path:'content/register', component: RegisterComponent},
+  {path:'content/dashboard', component: DashboardComponent}
 ];
 
 @NgModule({
@@ -20,5 +22,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const RoutingComponents = [HomeComponent, LoginComponent, RegisterComponent, OurstoryComponent, PricingComponent]
+export const RoutingComponents = [HomeComponent, LoginComponent, RegisterComponent, OurstoryComponent, PricingComponent, DashboardComponent]
 

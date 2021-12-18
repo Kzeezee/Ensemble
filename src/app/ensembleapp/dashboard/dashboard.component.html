@@ -1,37 +1,36 @@
 <!-- Override bootstrap row applied margin and col applied padding -->
 <div class="container">
-    <div class="row">
-        <div class="col-3">
-            <app-nav-drawer></app-nav-drawer>
-        </div>
-        <div class="col-9">
-
-            <mat-expansion-panel>
-                <mat-expansion-panel-header>
-                  <mat-panel-title>
-                    Current Events
-                  </mat-panel-title>
-                </mat-expansion-panel-header>
-                    <app-header></app-header>
-              </mat-expansion-panel>
-
-              <mat-expansion-panel>
-                <mat-expansion-panel-header>
-                    <mat-panel-title>
-                    Upcoming Events
-                  </mat-panel-title>
-                </mat-expansion-panel-header>
-                    <app-header></app-header>
-              </mat-expansion-panel>
-            
-
-
-              <!-- <div class="card">
-                <div class="card-header">Current Events</div>
-                <app-header></app-header>
-            </div> -->
-
-        </div>
+  <div class="row">
+    <div class="col-3">
+      <app-nav-drawer></app-nav-drawer>
     </div>
+    <div class="col-9">
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title class="align-items-center">
+            Current Events
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <app-header></app-header>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title class="align-items-center">
+            Upcoming Events
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <app-header></app-header>
+      </mat-expansion-panel>
+      
+
+
+          <!-- <div class="card">
+            <div class="card-header">Current Events</div>
+            <app-header></app-header>
+        </div> -->
+
+    </div>
+  </div>
 
 </div>
