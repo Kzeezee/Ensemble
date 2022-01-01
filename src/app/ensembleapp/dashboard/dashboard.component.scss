@@ -1,0 +1,40 @@
+.container {
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+
+.col-sm {
+  margin: 0;
+  padding: 0;
+}
+ 
+.card {
+  margin-left: -8px;
+  margin-right: 8px;;
+  margin-top: 15px;
+  padding: 0;
+  width: 142%;
+  border-radius: 5px;
+}
+
+.card-header {
+  font-weight: bolder;
+  font-size: large;
+  padding-right: 5px;
+}
+
+
+mat-expansion-panel {
+  margin-top: 30px;
+  width: 146%;
+}
+
+.mat-content {
+  height:10vw;
+}
+
+mat-panel-title {
+  font-weight: bolder;
+  font-size: 25px;
+}

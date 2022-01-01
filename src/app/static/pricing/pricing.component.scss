@@ -1,0 +1,18 @@
+.landingDiv div h3 {
+    color: #111111;
+    font-weight: 600;
+    font-size: 2vw;
+    text-align: center;
+    margin: 0 0 0vw;
+    height: 3vw;
+}
+
+//landing background section
+.landingDiv  {
+    min-height: 100%; 
+    background-color: rgba(49, 128, 159, 0.5);
+}
+
+.row {
+    --bs-gutter-x: 0;
+}   

@@ -1,0 +1,98 @@
+.container {
+    padding: 0;
+    margin: 0;
+}
+
+.container-fluid {
+    padding-left: 40px;
+    padding-right: 30px;
+}
+
+.event-slider {
+    padding: 20px 0;
+}
+
+.slider-wrap {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    width: 102%;
+}
+
+.slider-main {
+    position: absolute;
+    width: 120%;
+}
+
+.event-item {
+    position: relative;
+    display: inline-block;
+    width: 324px;
+    height: 200px;
+    margin: 0 12px;
+}
+
+.card {
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // background-color: gray;
+    border-radius: 5%;
+    border-width: 1px;
+    border-color: black;
+}
+
+.card-title {
+    margin: 0;
+}
+
+.card-img-top {
+    padding: 10px;
+}
+
+.card-body {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+ .mat-chip{
+    align-items: center;
+    margin: -9px; 
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: -9px;
+    align-content: center;
+    justify-content: center;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.prev {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.next {
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+}

@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { CarService } from './shared/services/car.service';
+import { CarService } from './ensembleapp/shared/services/car.service';
 
 @Component({
   selector: 'app-root',
@@ -15,13 +15,13 @@ export class AppComponent {
     private carSerivce: CarService
   ) {}
 
-  public buttonPress() {
-    this.carSerivce.getSample().subscribe(
-      (response: String) => {
-        console.log(response);
-      }, (err) => {
-        console.log(err)
-      }
-    )
-  }
+  // public buttonPress() {
+  //   this.carSerivce.getSample().subscribe(
+  //     (response: String) => {
+  //       console.log(response);
+  //     }, (err) => {
+  //       console.log(err)
+  //     }
+  //   )
+  // }
 }

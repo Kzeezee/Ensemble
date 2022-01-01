@@ -1,0 +1,158 @@
+/*-----------------------shared css-----------------------*/
+//remove unecessary (fake) paddings caused by responsive line height
+* {
+    line-height: 0 !important;
+}
+
+//bottom padding
+.bottomPadding1 {
+    margin-bottom: min(2vw, 28.8px);
+}
+
+.bottomPadding2 {
+    margin-bottom: min(4vw, 57.6px);
+}
+
+//remove appended x-coord space from row class
+.row {
+    --bs-gutter-x: 0;
+}
+
+//allow for text to break into new line + overide default line height
+.autoNewLine {
+    overflow-wrap: break-word;
+    line-height: 1 !important;
+}
+/*-----------------------shared css-----------------------*/
+
+
+/*-----------------------room pixel art image-----------------------*/
+//room pixel art
+.roomPixelArt {
+    min-height: 100%;
+    width:100%;
+    background-image: url(/assets/static-website/pixelartroom1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(0.2vw);
+}
+/*-----------------------room pixel art image-----------------------*/
+
+
+/*-----------------------blue bar in middle of login page-----------------------*/
+//blue bar
+.backgroundBlue {
+    height: min(30vw, 384px);
+    width: 100%;
+    background: rgba(49, 128, 159, 0.5);
+    z-index: 1;
+    position: absolute;
+}
+/*-----------------------blue bar in middle of login page-----------------------*/
+
+
+/*-----------------------login section-----------------------*/
+//card layout for login section
+.registerCard {
+    background-color: white;
+    width: min(30vw, 450px);
+    min-height: min(45vw, 672px); 
+    border-radius: min(2vw, 28.8px);
+    box-shadow: 0 0.2vw 0.5vw rgba(0, 0, 0, 0.5);
+    z-index: 2; 
+}
+
+//make input form responsive
+input {
+    height: min(4vw, 57.6px);
+    border-radius: min(1.5vw, 19.2px);
+    font-size: min(1.5vw, 19.2px);
+    border: 0.2vw solid #ced4da;
+    padding: min(1.5vw, 19.2px);
+}
+
+//make button responsive
+.btn {
+    height: min(4vw, 57.6px);
+    width: min(15vw, 192px);
+    padding: min(1vw, 9.6px);
+    font-size: min(1.5vw, 19.2px);
+    border-radius: min(1.25vw, 19.2px);
+    line-height: 0vw;
+}
+
+//change button colour
+.btn-primary {
+    color: #fff;
+    background-color: rgba(49, 128, 159, 1);
+    border-color: rgba(49, 128, 159, 1);
+}
+
+//line for separation between login input and google sign in
+.line {
+    border: 0.01vw solid #cecece;
+    height: 0vw;
+}
+
+//or text
+.orText {
+    font-size: min(1.5vw, 19.2px);
+    text-align: center;
+    color: #cecece;
+}
+
+//user sign up link
+.registerLink {
+    font-size: min(1.5vw, 19.2px);
+    color: rgba(17, 17, 17, 0.35);
+    width: 100%;
+    bottom: 0;
+}
+
+//remove text decoration for sign up link
+.darkText {
+    color: rgba(17, 17, 17, 0.8);
+    text-decoration: none;
+}
+/*-----------------------login section-----------------------*/
+
+
+/*-----------------------logo section-----------------------*/
+//Ensemble logo
+.logo {
+    width: min(4vw, 57.6px);
+    left: 33.3vw;
+    position: absolute;
+    filter: drop-shadow(0px 0.2vw 0.5vw rgba(0, 0, 0, 0.5));
+    transform: translate(-50%, 0);
+}
+
+//defining white circle
+.whiteCircle {
+    width:100%;
+    height: 100%;
+}
+
+.circlePos {
+    top: 0%;
+    left: 0%;
+}   
+/*-----------------------logo section-----------------------*/
+
+
+/*-----------------------enchancing experiences section-----------------------*/
+//no choice but to hardcode enhancing experiences divider
+.enhancingDiv {
+    position: absolute;
+    left:16.65%;
+    transform: translate(-50%, 0);
+}
+
+//enhancing experiences text
+.enchancingText {
+    font-size: min(3vw, 38.4px);
+    width: min(26vw, 249.6px);
+    color: white;
+    text-shadow: 0px 0.2vw 0.5vw rgba(17, 17, 17, 0.5);
+}
+/*-----------------------enchancing experiences section-----------------------*/

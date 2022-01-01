@@ -1,0 +1,64 @@
+// navigation bar
+.navbar.transparent {
+    position: fixed;
+    background-color: transparent;
+    width: 100%;
+    box-shadow: 0px 0.2vw 0.5vw rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    transition: 100ms; 
+}   
+
+.navbar-nav li a {
+    color: #e0e0e0;
+    font-size: min(3.125vw, 30px);
+    text-shadow: 0 2.5px #424342;
+    padding: 0 auto;
+    height:100%;
+}
+
+.navbar.inverse div .navbar-nav li a {
+    text-shadow: 0 2.5px #111111;
+}
+
+.nav-link {
+    font-size: 35px;
+    min-width: 50vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    padding: 0;
+}
+
+
+.navbar.inverse {
+    background-color: #424342;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 0.2vw 0.5vw rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    transition: 100ms; 
+}
+
+// change colour of padding and word when mouse hover
+.navbar-nav li a:hover {
+    color: #111111;
+    text-shadow: 0px 2px grey;
+    transition: 0.5s; 
+}
+
+.navbar.inverse div .navbar-nav.inverse li a:hover {
+    color: #FFFFFF;
+    text-shadow: 0px 2px grey;
+    transition: 0.5s; 
+}
+
+.logo {
+    width: min(8.34vw, 40px);
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    padding-left: 0.5vw;
+    filter: drop-shadow(0px 0.2vw 0.5vw rgba(0, 0, 0, 0.5));
+}

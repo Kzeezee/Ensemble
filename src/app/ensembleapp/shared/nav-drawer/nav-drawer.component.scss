@@ -1,0 +1,45 @@
+.nav-drawer-container {
+    background-color: var(--contrast-background);
+    height: 100vh;
+    width: 300px;
+    overflow: hidden;
+}
+
+.profile-pic-container {
+    margin-top: 5%;
+    .profile-pic {
+        height: 8em;
+        margin: 1em 0em;
+        text-align: center;
+    }
+}
+
+.person-name {
+    text-align: center;
+    font-weight: 500;
+    font-size: 2em;
+    color: var(--primary);
+    padding: 0.2em 0em;
+}
+
+.person-username {
+    text-align: center;
+    font-weight: 300;
+    font-size: 2em;
+    padding: 0.4em 0em 1em 0;
+    color: rgba($color: #FFFFFF, $alpha: 0.5)
+}
+
+hr .solid {
+    border-top: 3px solid var(--background-white);
+}
+
+.nav-drawer-container {
+    
+}
+
+.list-group-item {
+    font-size: larger;
+    background-color: var(--contrast-background);
+    color: #FFFFFF;
+}

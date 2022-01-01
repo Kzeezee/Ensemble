@@ -1,0 +1,262 @@
+/*-----------------------shared css-----------------------*/
+//remove unecessary (fake) paddings caused by responsive line height
+* {
+    line-height: 0 !important;
+}
+
+//bottom padding
+.bottomPadding {
+    margin-bottom: min(2vw, 28.8px);
+}
+
+//hightlight for words
+.blueFont {
+    color: #31809F;
+    line-height: 1 !important;
+}
+
+//remove appended x-coord space from row class
+.row {
+    --bs-gutter-x: 0;
+}
+
+//allow for text to break into new line + overide default line height
+.autoNewLine {
+    overflow-wrap: break-word;
+    line-height: 1 !important;
+}
+
+//product + feature text for intro + features section
+.sectionText {
+    font-size: min(2vw, 19.2px);
+    height: min(2vw, 19.2px);
+    margin: 0 0 0vw;
+}
+
+//intro + features section pixel art
+.sharedPixelArt {
+    width: 70%;
+    height: min(35vw, 336px);
+}
+/*-----------------------shared css-----------------------*/
+
+/*-----------------------landing section-----------------------*/
+//top text for landing section
+.landingDiv div h3 {
+    color: #FFFFFF;
+    font-size: min(4.16vw, 40px);
+    text-shadow: 0 0 0.25vw rgba(17, 17, 17, 0.5), 0 0 0.5vw rgba(17, 17, 17, 0.5), 0 0 0.75vw rgba(17, 17, 17, 0.5);
+    margin: 0 0 0vw;
+    height: min(5.2vw, 50px);
+}
+
+//bottom text for landing section
+.text1 {
+    color: #FFFFFF;
+    font-size: min(1.98vw, 19px);
+    text-shadow: 0 0 0.25vw rgba(17, 17, 17, 0.5), 0 0 0.5vw rgba(17, 17, 17, 0.5), 0 0 0.75vw rgba(17, 17, 17, 0.5);
+    text-align: center;
+    margin: 0 0 0vw;
+    height: 2vw;
+}
+
+//landing background section
+.landingDiv  {
+    min-height: min(100.9375vw, 969px);
+    //background image 
+    background-image: url('/assets/static-website/nightbar.jpg');
+    //background tint
+    background-color: rgba(49, 128, 159, 0.5);
+    background-blend-mode: multiply;
+    //make background responsive
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+}
+
+//make button responsive
+.btn {
+    border-radius: 100vw;
+    width: min(13vw, 125px);
+    height: min(4vw, 38px);
+    font-size: min(1.6vw, 15.4px);
+    border: 0.01vw solid white;
+    padding:0.1vw;    
+}
+/*-----------------------landing section-----------------------*/
+
+
+/*-----------------------banner section-----------------------*/
+//banner background section
+.bannerBackground {
+    min-height: min(55vw, 528px);
+    position: relative;
+    background: conic-gradient(from 134.12deg at 49.24% 34.49%, rgba(49, 128, 159, 0.2) -181.88deg, #31809F 0.86deg, rgba(49, 128, 159, 0.847644) 44.32deg, rgba(49, 128, 159, 0.2) 178.12deg, #31809F 360.86deg);
+    box-sizing: border-box;
+}
+
+//Ensemble text for banner
+.bannerBackground div div h3{
+    color: #FFFFFF;
+    font-size: min(6vw, 58px);
+    text-shadow: 0 0 5px rgba(17, 17, 17, 0.25), 0 0 10px rgba(17, 17, 17, 0.25), 0 0 15px rgba(17, 17, 17, 0.25);
+    height: min(5vw, 48px);
+    margin: 0 0 0vw;
+}
+
+//Ensemble logo
+.logo {
+    width: min(20vw, 192px);
+    filter: drop-shadow(0px 0.2vw 0.5vw rgba(0, 0, 0, 0.5));
+    padding-bottom: 1vw;
+}
+/*-----------------------banner section-----------------------*/
+
+
+/*-----------------------hook section-----------------------*/
+//white background for hook section
+.backgroundWhite {
+    min-height: min(55vw, 528px);
+    background-color: white;
+}
+
+//Header text for hook section
+.backgroundWhite div div h3 {   
+    color: #111111;
+    font-size: min(4.5vw, 57.6px); 
+    height: min(4.5, 57.6);
+    margin: 0 0 0vw;
+}
+
+//question text for hook section
+.questionText {
+    font-size: min(2vw, 19.2px); 
+    height: min(5vw, 38.4px);
+    margin: 0 0 0vw;
+}
+
+//bottom text for hook section
+.text2 {
+    font-size: min(2vw, 19.2px); 
+    height: min(5vw, 38.4px);
+    margin: 0 0 0vw;
+    overflow-wrap: break-word;
+    line-height: 1 !important;
+    margin-top: min(2vw, 28.8px);
+}
+
+//hook section pixel art
+.hookPixelArt {
+    height: min(40vw, 384px);
+    width: 100%;    
+}
+/*-----------------------hook section-----------------------*/
+
+
+/*-----------------------introduction section-----------------------*/
+//grey background for intro section
+.backgroundGrey1 {
+    min-height: min(100.9375vw, 969px);
+    background-color: #F2F2F2;
+}
+
+//header for ensemble/feature name
+.ensembleText {
+    font-size: min(6vw, 57.6px);
+    height: min(6vw, 57.6px);
+    margin: 0 0 0vw;
+    line-height: 0.5 !important;
+    margin-top: min(6vw, 9.6px);
+}
+
+//bottom text for intro section
+.introText {
+    font-size: min(3vw, 28.8px);
+    height: min(12.5vw, 76.8px);
+    margin: 0 0 0vw;
+    margin-top: min(6vw, 9.6px);
+    line-height: 1.25 !important;
+}
+/*-----------------------introduction section-----------------------*/
+
+
+/*-----------------------features section-----------------------*/
+//grey background for feature section to give feature cards equal space between them
+.backgroundGrey2 {
+    min-height: min(100.9375vw, 969px);
+    margin-top: -5%;
+    background-color: #F2F2F2;
+}
+
+.feature {
+    font-size: min(6vw, 57.6px);
+    height: max(90%, 28.8px);
+    margin: 0 0 0vw;
+    line-height: 1 !important;
+    margin-top: min(6vw, 9.6px);
+    width: 100%;
+}
+
+//card layout for each feature
+.featureCard {
+    background-color: white;
+    height: min(80vw, 768px);
+    width: 80%;
+    border-radius: 1.5vw;
+    box-shadow: 0px 0.2vw 0.5vw rgba(0, 0, 0, 0.5);
+}
+
+//feature description text
+.featureDesc {
+    font-size: min(3vw, 28.8px);
+    height: max(150%, 230.4px);
+    margin: 0 0 0vw;
+    margin-top: min(6vw, 9.6px);
+    padding-top:max(2vw);
+    padding-top:min(0px);
+    line-height: 1.25 !important;
+}
+/*-----------------------features section-----------------------*/
+
+
+/*-----------------------many more text section-----------------------*/
+//grey background for many more text
+.manymoreDiv {
+    background-color: #F2F2F2;
+}
+
+//many more text
+.manymoreDiv h3 {
+    font-size: min(6vw, 57.6px);
+    min-height: min(10vw, 96px);
+    margin: 0 0 0;
+}
+/*-----------------------many more text section-----------------------*/
+
+
+/*-----------------------call to action section-----------------------*/
+//movie screen card
+.movieScreen {
+    background-color: white;
+    min-height: 30vw;
+    width: 50%;
+    border-radius: 1.5vw;
+    box-shadow: 0px 0.2vw 0.5vw rgba(0, 0, 0, 0.5);
+}   
+
+//background for call to action section
+.backgroundTheatre {
+    min-height: min(100.9375vw, 969px);
+    width: 100%;
+    background-image: url("/assets/static-website/movietheatre.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+//call to action text
+.callToActionText {
+    font-size: min(3vw, 28.8px);
+    height: min(6vw, 57.6px);
+    margin: 0 0 0vw;
+}
+/*-----------------------call to action section-----------------------*/
