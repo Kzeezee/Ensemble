@@ -34,9 +34,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/TemplateData/style.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/Build/ensemble_app.loader.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -102,9 +105,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/TemplateData/style.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/Build/TestApp.loader.js"
+            ]
           }
         }
       }
