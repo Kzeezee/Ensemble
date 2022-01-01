@@ -36,14 +36,11 @@
             ],
             "styles": [
               "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/assets/TemplateData/style.css"
             ],
             "scripts": [
               "src/assets/Build/ensemble_app.loader.js",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.scss"
-            ],
-            "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
