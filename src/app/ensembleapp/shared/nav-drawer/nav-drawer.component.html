@@ -1,16 +1,16 @@
  <div class="nav-drawer-container">
-    <div class="row justify-content-center profile-pic-container"><img class="profile-pic" src="../../../../assets/static-website/Ensemble Logo white.svg" alt="Profile Picture"></div>
+    <div class="row justify-content-center profile-pic-container"><img class="profile-pic" src="../../../../assets/static-website/EnsembleLogo.svg" alt="Profile Picture"></div>
     <div class="row person-name justify-content-center">John Smith</div>
     <div class="row person-username justify-content-center">@JohnSmith</div>
     <div class="nav-drawer-container">
 
         <div class="list-group">
-            <a href="#home" class="list-group-item list-group-item-action">Home</a>
+            <a [routerLink]="['/content/dashboard']" class="list-group-item list-group-item-action">Home</a>
             <a href="#join" class="list-group-item list-group-item-action">Join Event</a>
             <a href="#view" class="list-group-item list-group-item-action">View Events</a>
             <a href="#org" class="list-group-item list-group-item-action">Organisations</a>
             <a href="#settings" class="list-group-item list-group-item-action">Settings</a>
-            <a href="#logout" class="list-group-item list-group-item-action">Log out</a>
+            <a [routerLink]="['/content/login']" (click)="onLogout()" class="list-group-item list-group-item-action">Log out</a>
           </div>
     </div>
 </div>

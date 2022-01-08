@@ -62,6 +62,12 @@
     z-index: 2; 
 }
 
+// error text
+.error {
+    color: red;
+    padding: 12px 0 2px 4px;
+}
+
 //make input form responsive
 input {
     height: min(4vw, 57.6px);

@@ -35,20 +35,39 @@
                     <div class="col-4 line my-auto">
                     </div>
                 </div>
-                <form class="">
+                <form class="loginText" [formGroup]="loginForm" (ngSubmit)="onLogin()">
+
                     <div class="form-group row justify-content-center bottomPadding1">
                         <div class="col-10">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address" required>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address" formControlName="email" required>
+                            <div *ngIf="email.invalid && (email.dirty || email.touched)" class="error">
+
+                                <div *ngIf="email.errors?.['required']">
+                                    Email is required
+                                </div>
+                                <div *ngIf="email.errors?.['email']">
+                                    Email is invalid
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                     <div class="form-group row justify-content-center bottomPadding2">
                         <div class="col-10">
-                            <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Password" formControlName="password" required>
+                            <div *ngIf="password.invalid && (password.dirty || password.touched)" class="error">
+
+                                <div *ngIf="password.errors?.['required']">
+                                    Password is required
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                     <div class="text-center">
-                        <button type="submit" class="btn btn-primary">LOGIN</button>
+                        <button type="submit" class="btn btn-primary" [disabled]="pendingFormSubmit">LOGIN</button>
                     </div>
+
                 </form>
                 <div class="registerLink d-flex justify-content-center align-items-center">
                     New user? <a class="darkText" routerLink="/content/register">&nbsp;Sign up</a>

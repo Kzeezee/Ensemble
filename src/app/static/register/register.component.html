@@ -50,34 +50,84 @@
     <div class="col-8 justify-content-center font">
         <div class="row justify-content-around align-items-center">
             <div class="registerCard  row align-items-center justify-content-center">
-                <form class="loginText row align-items-center">
+                <form class="loginText row align-items-center" [formGroup]="registerForm" (ngSubmit)="onRegister()">
                     <div class="form-group row justify-content-center bottomPadding1">
                         <div class="col-10">
-                            <input type="text" class="form-control" placeholder="First name" required>
+                            <input type="text" class="form-control" placeholder="First name" formControlName="firstName" (keyup)="titlecase($event)" required>
+                            <div *ngIf="firstName.invalid && (firstName.dirty || firstName.touched)" class="error">
+
+                                <div *ngIf="firstName.errors?.['required']">
+                                    First name is required
+                                </div>
+                                <div *ngIf="firstName.errors?.['minlength']">
+                                    First name must be at least 2 characters long.
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                     <div class="form-group row justify-content-center bottomPadding1">
                         <div class="col-10">
-                            <input type="text" class="form-control" placeholder="Last name" required>
+                            <input type="text" class="form-control" placeholder="Last name" formControlName="lastName" (keyup)="titlecase($event)" required>
+                            <div *ngIf="lastName.invalid && (lastName.dirty || lastName.touched)" class="error">
+
+                                <div *ngIf="lastName.errors?.['required']">
+                                    Last name is required
+                                </div>
+                                <div *ngIf="lastName.errors?.['minlength']">
+                                    Last name must be at least 2 characters long.
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                     <div class="form-group row justify-content-center bottomPadding1">
                         <div class="col-10">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address" required>
+                            <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email Address" formControlName="email" required>
+                            <div *ngIf="email.invalid && (email.dirty || email.touched)" class="error">
+
+                                <div *ngIf="email.errors?.['required']">
+                                    Email is required
+                                </div>
+                                <div *ngIf="email.errors?.['email']">
+                                    Email is invalid
+                                </div>
+                                <div *ngIf="email.errors?.['server']">
+                                    Email already exists!
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                     <div class="form-group row justify-content-center bottomPadding1">
                         <div class="col-10">
-                            <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+                            <input type="password" class="form-control" placeholder="Password" formControlName="password" required>
+                            <div *ngIf="password.invalid && (password.dirty || password.touched)" class="error">
+
+                                <div *ngIf="password.errors?.['required']">
+                                    Password is required
+                                </div>
+                                <div *ngIf="password.errors?.['minlength']">
+                                    Password must be at least 8 characters
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                     <div class="form-group row justify-content-center bottomPadding1">
                         <div class="col-10">
-                            <input type="password" class="form-control" id="inputPassword" placeholder="Confirm Password" required>
+                            <input type="password" class="form-control" placeholder="Confirm Password" formControlName="confirmPassword" required>
+                            <div *ngIf="(confirmPassword.dirty || confirmPassword.touched)" class="error">
+
+                                <div *ngIf="password.value != confirmPassword.value">
+                                    Password confirmation must match
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                     <div class="text-center font">
-                        <button type="submit" class="btn btn-primary">REGISTER</button>
+                        <button type="submit" class="btn btn-primary" [disabled]="pendingFormSubmit">REGISTER</button>
                     </div>
                 </form>
                 <div class="registerLink text-center">
