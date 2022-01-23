@@ -7,3 +7,21 @@ export interface PersonCreationDTO {
     password: string;
     confirmPassword: string;
 }
+
+export interface EventCreationDTO {
+    title: string;
+    summary: string;
+    startDate: number;
+    endDate: number;
+}
+
+export interface EventDetailsDTO {
+    id: number;
+    title: string;
+    summary: string;
+    organisers: string;
+    eventCode: string;
+    startDate: number;
+    endDate: number;
+
+}

@@ -1,0 +1,86 @@
+<!-- Override bootstrap row applied margin and col applied padding -->
+<div class="row page-container">
+  <div class="col-2">
+    <app-nav-drawer></app-nav-drawer>
+  </div>
+  <div class="col-7">
+    <div class="content-container">
+      <h1 class="page-header-text">Create Event</h1>
+      <p style="font-weight: 500;">
+        Events on Ensemble are virtual conventions that users can join and
+        interact with the booths, people or friends. Create one now to host your
+        very own virtual convention experience.
+      </p>
+      <form [formGroup]="createEventForm" (ngSubmit)="createEvent()">
+        <h2>Event Details</h2>
+        <div class="row">
+          <mat-form-field appearance="fill">
+            <mat-label>Event name</mat-label>
+            <input matInput formControlName="title" required placeholder="Give a name for your event" />
+          </mat-form-field>
+          <div *ngIf="title.invalid && (title.dirty || title.touched)" class="error">
+
+            <div *ngIf="title.errors?.['required']">
+              Event name is required
+            </div>
+            <div *ngIf="title.errors?.['minlength']">
+              Event title must be at least 2 characters
+            </div>
+            <div *ngIf="title.errors?.['maxlength']">
+              Event title must not exceed 80 characters
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <mat-form-field appearance="fill">
+            <mat-label>Event Summary</mat-label>
+            <textarea
+              matInput
+              rows="8"
+              placeholder="Give a summary of your event"
+              formControlName="summary"
+              style="resize: none"
+            ></textarea>
+          </mat-form-field>
+          <div *ngIf="summary.invalid && (summary.dirty || summary.touched)" class="error">
+
+            <div *ngIf="summary.errors?.['maxlength']">
+              Event summary must not exceed 250 characters
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <mat-form-field appearance="fill" class="date-form-field">
+              <mat-label>Start date</mat-label>
+              <input matInput type="datetime-local" [max]="endDate.value" (change)="onStartDateChange()" formControlName="startDate" required placeholder="Your event start date" />
+          </mat-form-field>
+          </div>
+          <div class="col-6">
+              <mat-form-field appearance="fill" class="date-form-field">
+                  <mat-label>End date</mat-label>
+                  <input matInput type="datetime-local" [min]="startDate.value" (change)="onEndDateChange()" formControlName="endDate" required placeholder="Your event end date" />
+              </mat-form-field>
+          </div>
+          <div class="helper-text">The dates are in your current system locale timezone. Please verify your current timezone matches with your intended event dates.</div>
+        </div>
+
+        <div class="row system-locale-text">
+          <div class="col-6">From {{ unixStart }}</div>
+          <div class="col-6">to  {{ unixEnd }}</div>
+        </div>
+
+        <div class="row" style="margin-top: 64px;">
+          <div class="col-md-4 offset-md-4">
+            <button type="submit" class="btn btn-primary btn-block" style="width: 100%;">Create Event</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>

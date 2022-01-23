@@ -1,0 +1,66 @@
+.page-container {
+    margin-top: 0;
+    margin-right: 0;
+}
+ 
+.card {
+  margin-left: -8px;
+  margin-right: 8px;;
+  margin-top: 15px;
+  padding: 0;
+  width: 142%;
+  border-radius: 5px;
+}
+
+.card-header {
+  font-weight: bolder;
+  font-size: large;
+  padding-right: 5px;
+}
+
+
+mat-expansion-panel {
+  margin-top: 30px;
+  width: 146%;
+}
+
+.mat-content {
+  height:10vw;
+}
+
+mat-panel-title {
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.content-container {
+  margin-top: 24px;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+}
+
+.page-header-text {
+  color: #31809F;
+  font-weight: 700;
+}
+
+.date-form-field {
+  display: inline;
+}
+
+.helper-text {
+  font-weight: 300;
+}
+
+.system-locale-text {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 24px 0px;
+}
+
+.error {
+  color: red;
+  margin: -18px 0px 16px 0px;
+}

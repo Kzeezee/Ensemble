@@ -51,7 +51,7 @@ export class LoginComponent implements OnInit {
       this.passwordString = this.password.value;
       this.authService.login(this.emailString, this.passwordString).subscribe(
         res => {
-          this.router.navigate(['content/dashboard']);
+          this.router.navigate(['dashboard']);
           this.pendingFormSubmit = false;
         }, err => {
           if (err instanceof HttpErrorResponse) {
